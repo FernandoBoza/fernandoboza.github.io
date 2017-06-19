@@ -57,7 +57,7 @@ constructor(props) {
                   <div className="slide-text">
                     <h1 className='thin'>Who am I? <span role="img" aria-label="Ponder">🤔</span></h1>
                     <p className='text-justify'>
-                    Born in sunny latin Miami, I studied and honed my design skills in broadcasting and Product developement. Moved to Paris in '14 and honed my developing as a developer community manager in London, Barcelona, Munich, and Berlin organizing the community and events.
+                    Raised in sunny latin Miami, I studied and honed my design skills in broadcasting and Product developement. Moved to Paris in '14 and honed my developing as a developer community manager in London, Barcelona, Munich, and Berlin organizing the community and events.
                     </p>
                     <p className='bold text-justify'>Clients include Intel, AB-Inbev, SBS Broadcast, Interinvestment, Salesforce, and many more.</p>
                     <p className="bold text-justify">Collaborated with IBM, Aurelia, Kii, Sigfox, Kickstarter, and the things.iO</p>
