@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { ListGroup, ListGroupItem } from 'reactstrap';
-
+import WOW from 'wowjs';
 
 class Tutorial extends Component {
+
+    componentDidMount() {
+        new WOW.WOW().init();
+    }
     render() {
     return (
         <div className='mb-9' id='tutorial'>
 
-            <section className='p action'>
-            <Container className='pt-5'>
-                <Row>
-                <Col>
+        <section className='p action wow fadeIn' data-wow-duration="1000ms" data-wow-delay="300ms">
+        <Container className='pt-5'>
+            <Row>
+                <Col className="wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <h1 className="thin">Tutorial</h1>
                     <h5>Developent Tutorials</h5>
                 </Col>
-                </Row>
-            </Container>
-            </section>
+            </Row>
+        </Container>
+        </section>
 
-            <section className='mt-5 mb-9'>
+            <section className='mt-5 mb-9 wow fadeIn' data-wow-duration="1000ms" data-wow-delay="300ms">
                 <Container>
                     <Row>
                         <ListGroup>

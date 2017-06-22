@@ -6,9 +6,7 @@ import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardBlock } from 
 
 // Images 
 import meanapp from '../../img/portfolio/meanapp.jpg';
-// import marj from '../../img/portfolio/marj.jpg';
 import swm from '../../img/portfolio/swm.jpg';
-import flyAca from '../../img/portfolio/flyaca.jpg';
 import miaFit from '../../img/portfolio/miaFit.jpg';
 import tripsmack from '../../img/portfolio/2.jpg';
 import jwlry from '../../img/portfolio/3.jpg';
@@ -18,6 +16,10 @@ import github from '../../img/portfolio/9.jpg';
 import behance from '../../img/portfolio/10.jpg';
 import reactfb from '../../img/portfolio/homepg.png'; 
 import ds1 from '../../img/portfolio/ds1.jpg'; 
+import umbrallaCorp from '../../img/portfolio/umbrellaCorp.png'; 
+
+// import marj from '../../img/portfolio/marj.jpg';
+// import flyAca from '../../img/portfolio/flyaca.jpg';
 
 import 'animate.css/animate.css';
 
@@ -30,10 +32,10 @@ class Portfolio extends Component {
     return (
       <div id='portfolio'>
 
-        <section className='p action'>
+        <section className='p action wow fadeIn' data-wow-duration="1000ms" data-wow-delay="300ms">
           <Container className='pt-5'>
             <Row>
-              <Col>
+              <Col className="wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
                 <h1 className="thin">Portfolio</h1>
                 <h5>My Work</h5>
               </Col>
@@ -46,10 +48,18 @@ class Portfolio extends Component {
             <Row>
               <CardDeck>
                 <Card>
+                  <CardImg top width="100%" src={umbrallaCorp} alt="Fernando Boza Portfolio" />
+                  <CardBlock className='d-flex flex-column'>
+                    <CardTitle>Umbrella Corp Mockup</CardTitle>
+                    <CardText>Built with Bootstrap 4, Sass, TweenMax.JS and Hover.CSS</CardText>
+                    <a href="http://fernandoboza-ds2.surge.sh/" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
+                  </CardBlock>
+                </Card>
+                <Card>
                   <CardImg top width="100%" src={ds1} alt="Fernando Boza Portfolio" />
                   <CardBlock className='d-flex flex-column'>
                     <CardTitle>Demo Site</CardTitle>
-                    <CardText>Built with React, React-Strap, Sass, Wow, Animate CSS and Hover CSS</CardText>
+                    <CardText>Built with React, React-Strap Bootstrap 4, Sass, Wow JS, Animate CSS and Hover CSS</CardText>
                     <a href="http://fernandoboza.com/ds1" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
                   </CardBlock>
                 </Card>
@@ -77,14 +87,6 @@ class Portfolio extends Component {
                     <a href="http://mar-jmedical.com/lp_scooter" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
                   </CardBlock>
                 </Card>*/}
-                <Card>
-                  <CardImg top width="100%" src={swm} alt="Fernando Boza Portfolio" />
-                  <CardBlock className='d-flex flex-column'>
-                    <CardTitle>Social Wolf Media</CardTitle>
-                    <CardText>HTML, Sass, jQuery, PHP, WordPress.</CardText>
-                    <a href="http://socialwolfmedia.com/" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
-                  </CardBlock>
-                </Card>
               </CardDeck>
             </Row>
           </Container>
@@ -95,13 +97,21 @@ class Portfolio extends Component {
             <Row>
               <CardDeck>
                 <Card>
+                  <CardImg top width="100%" src={swm} alt="Fernando Boza Portfolio" />
+                  <CardBlock className='d-flex flex-column'>
+                    <CardTitle>Social Wolf Media</CardTitle>
+                    <CardText>HTML, Sass, jQuery, PHP, WordPress.</CardText>
+                    <a href="http://socialwolfmedia.com/" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
+                  </CardBlock>
+                </Card>
+                {/*<Card>
                   <CardImg top width="100%" src={flyAca} alt="Fernando Boza Portfolio" />
                   <CardBlock className='d-flex flex-column'>
                     <CardTitle>Flying Academy</CardTitle>
                     <CardText>HTML, CSS, Wordpress.</CardText>
                     <a href="http://www.socialwolfmedia.com/FLYINGACADEMY/" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
                   </CardBlock>
-                </Card>
+                </Card>*/}
                 <Card>
                   <CardImg top width="100%" src={miaFit} alt="Fernando Boza Portfolio" />
                   <CardBlock className='d-flex flex-column'>
