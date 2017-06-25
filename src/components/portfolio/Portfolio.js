@@ -7,7 +7,6 @@ import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardBlock } from 
 // Images 
 import meanapp from '../../img/portfolio/meanapp.jpg';
 import swm from '../../img/portfolio/swm.jpg';
-import miaFit from '../../img/portfolio/miaFit.jpg';
 import tripsmack from '../../img/portfolio/2.jpg';
 import jwlry from '../../img/portfolio/3.jpg';
 import st8ottaParis from '../../img/portfolio/6.jpg';
@@ -17,7 +16,9 @@ import behance from '../../img/portfolio/10.jpg';
 import reactfb from '../../img/portfolio/homepg.png'; 
 import ds1 from '../../img/portfolio/ds1.jpg'; 
 import umbrallaCorp from '../../img/portfolio/umbrellaCorp.png'; 
+import bs4_gen from '../../img/portfolio/bs4-gen.png'; 
 
+// import miaFit from '../../img/portfolio/miaFit.jpg';
 // import marj from '../../img/portfolio/marj.jpg';
 // import flyAca from '../../img/portfolio/flyaca.jpg';
 
@@ -48,6 +49,14 @@ class Portfolio extends Component {
             <Row>
               <CardDeck>
                 <Card>
+                  <CardImg top width="100%" src={bs4_gen} alt="Fernando Boza Portfolio" />
+                  <CardBlock className='d-flex flex-column'>
+                    <CardTitle>Bootstrap 4 NPM Package</CardTitle>
+                    <CardText>A node module that generates a bootstrap 4 ready project, and wired with Gulp and Babel for ES6 and Sass</CardText>
+                    <a href="https://www.npmjs.com/package/bootstrap-4-generator" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
+                  </CardBlock>
+                </Card>
+                <Card>
                   <CardImg top width="100%" src={umbrallaCorp} alt="Fernando Boza Portfolio" />
                   <CardBlock className='d-flex flex-column'>
                     <CardTitle>Umbrella Corp Mockup</CardTitle>
@@ -71,14 +80,7 @@ class Portfolio extends Component {
                     <a href="http://fernandoboza.com" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
                   </CardBlock>
                 </Card>
-                <Card>
-                  <CardImg top width="100%" src={meanapp} alt="Fernando Boza Portfolio" />
-                  <CardBlock className='d-flex flex-column'>
-                    <CardTitle>Authentication and Authorization Kit</CardTitle>
-                    <CardText>Mongo, Express, Angular 2, Node</CardText>
-                    <a href="https://quiet-atoll-39136.herokuapp.com" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
-                  </CardBlock>
-                </Card>
+                
                 {/*<Card>
                   <CardImg top width="100%" src={marj} alt="Fernando Boza Portfolio" />
                   <CardBlock className='d-flex flex-column'>
@@ -97,6 +99,14 @@ class Portfolio extends Component {
             <Row>
               <CardDeck>
                 <Card>
+                  <CardImg top width="100%" src={meanapp} alt="Fernando Boza Portfolio" />
+                  <CardBlock className='d-flex flex-column'>
+                    <CardTitle>Authentication and Authorization Kit</CardTitle>
+                    <CardText>Mongo, Express, Angular 2, Node</CardText>
+                    <a href="https://quiet-atoll-39136.herokuapp.com" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
+                  </CardBlock>
+                </Card>
+                <Card>
                   <CardImg top width="100%" src={swm} alt="Fernando Boza Portfolio" />
                   <CardBlock className='d-flex flex-column'>
                     <CardTitle>Social Wolf Media</CardTitle>
@@ -112,14 +122,14 @@ class Portfolio extends Component {
                     <a href="http://www.socialwolfmedia.com/FLYINGACADEMY/" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
                   </CardBlock>
                 </Card>*/}
-                <Card>
+                {/*<Card>
                   <CardImg top width="100%" src={miaFit} alt="Fernando Boza Portfolio" />
                   <CardBlock className='d-flex flex-column'>
                     <CardTitle>Mia-Fit LeadPage</CardTitle>
                     <CardText>HTML, CSS, PHP, Woocommerce, Wordpress</CardText>
                     <a href="http://www.miafitnessworkout.com/" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
                   </CardBlock>
-                </Card>
+                </Card>*/}
                 <Card>
                   <CardImg top width="100%" src={st8ottaParis} alt="Fernando Boza Portfolio" />
                   <CardBlock className='d-flex flex-column'>
