@@ -17,6 +17,7 @@ import reactfb from '../../img/portfolio/homepg.png';
 import ds1 from '../../img/portfolio/ds1.jpg'; 
 import umbrallaCorp from '../../img/portfolio/umbrellaCorp.png'; 
 import bs4_gen from '../../img/portfolio/bs4-gen.png'; 
+import bma_intro from '../../img/portfolio/bma_intro.jpg'; 
 
 // import miaFit from '../../img/portfolio/miaFit.jpg';
 // import marj from '../../img/portfolio/marj.jpg';
@@ -188,6 +189,26 @@ class Portfolio extends Component {
                   </CardBlock>
                 </Card>
               </CardDeck>
+            </Row>
+          </Container>
+        </section>
+
+
+        <section className="mt-5 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <Container>
+            <Row>
+              <Col lg='3' className='pl-0'>
+                <CardDeck>
+                    <Card>
+                    <CardImg top width="100%" src={bma_intro} alt="BeMyApp Intro Video" />
+                    <CardBlock className='d-flex flex-column'>
+                        <CardTitle>BeMyApp Intro Video</CardTitle>
+                        <CardText>Motion Graphics: After Effects, Photoshop</CardText>
+                        <a href="https://www.youtube.com/watch?v=9MtsN3PC4oc" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
+                    </CardBlock>
+                    </Card>
+                </CardDeck>
+              </Col>
             </Row>
           </Container>
         </section>
