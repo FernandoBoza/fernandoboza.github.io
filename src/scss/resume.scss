@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$gray: #555;
+
+#resume {
+  color: $gray;
+  font-family: roboto;
+}
+
+.right-border {
+  border-right: 2px solid black;
+}
+
+.logo {
+  text-align: center;
+  border-radius: 50%;
+  border: 8px solid $gray;
+  position: relative;
+  width: 173px;
+  height: 170px;
+  left: 15%;
+    
+    h1 {
+      font-size: 4.5rem;
+      color: white !important;
+      background: $gray;
+      border-radius: 50%;
+      position: absolute;
+      padding: 30px ;
+      left: 7px;
+      top: 7px;
+  }
+}
+
+.right-line {
+   width: 95%; 
+   text-align: left; 
+   border-bottom: 2px solid $gray; 
+   line-height: 0.1em;
+   margin: 30px 0 50px; 
+  
+  span { 
+    background: white; 
+    padding:0 30px 0 0; 
+  }
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+    
+    &.left-list {
+      background:  $gray;
+      border-radius: 50%;
+      margin-right: 1rem;
+
+      .fa {
+        font-size: 1.7rem;
+        color: white;
+        width: 50px;
+        height: 50px;
+        padding-top: 12px;
+        text-align: center;
+        }
+    }
+    
+    &.right-list {
+      font-size: 1.5em;
+    }
+
+  }
+}
+
+ul.progress-list {
+  padding-left: 0;
+  li {
+    list-style: none;
+    // display: inline-block;
+    
+    &.left-list {
+      background: transparent;
+      margin-right: 10px;
+      font-size: 1.5rem;
+    }
+    
+    &.right-list {
+      height: 30px;
+      width: 95%;
+    }
+  }
+
+  .progress-bar {
+        height: 2rem !important;
+      }
+}
+
+ul.h4 {
+  li {
+    padding-right: 20px;
+  }
+}
+
+.col-2 {
+    h1 {font-size: 4.5rem}
+}
+
+@media screen and (max-width: 720px) {
+  ul {
+    &.right-list {
+      font-size: 1rem;
+    }
+  }
+}

@@ -62,7 +62,7 @@ constructor(props) {
                 <NavLink to="/tutorial" className='nav-link'>Tutorial</NavLink>
             </NavItem>
             <NavItem>
-                <NavLink to="https://drive.google.com/open?id=0B0cXXFBUeItLZlR5MGtvRlY0RUk" target='_blank' className='nav-link'>CV</NavLink>
+                <NavLink to="/resume" className='nav-link'>Resume</NavLink>
             </NavItem>
             </Nav>
             </Collapse>

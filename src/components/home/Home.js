@@ -148,15 +148,15 @@ constructor(props) {
                 <h2 className="thin">Skill</h2>
                   <div className="single-skill my-4">
                     <h6 className='thin'>Front-End Development</h6>
-                    <Progress animated color="info" value={this.state.percent + 40}>{this.state.percent + 40}</Progress> 
+                    <Progress animated color="info" value={this.state.percent + 40}>{this.state.percent + 40}</Progress>
                   </div>
                   <div className="single-skill my-4">
                     <h6 className='thin'>Back-End Development</h6>
-                    <Progress animated color="info" value={this.state.percent + 25}>{this.state.percent + 25}</Progress> 
+                    <Progress animated color="info" value={this.state.percent + 25}>{this.state.percent + 25}</Progress>
                   </div>
                   <div className="single-skill my-4">
                     <h6 className='thin'>Project Management</h6>
-                    <Progress animated color="info" value={this.state.percent + 50}>{this.state.percent + 50}</Progress>   
+                    <Progress animated color="info" value={this.state.percent + 50}>{this.state.percent + 50}</Progress>
                 </div>
 
                 </Col>
