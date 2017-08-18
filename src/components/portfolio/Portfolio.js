@@ -54,7 +54,7 @@ class Portfolio extends Component {
                   <CardBlock className='d-flex flex-column'>
                     <CardTitle>Bootstrap 4 NPM Package</CardTitle>
                     <CardText>A node module that generates a bootstrap 4 ready project, and wired with Gulp and Babel for ES6 and Sass</CardText>
-                    <a href="https://www.npmjs.com/package/bootstrap-4-generator" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
+                    <a href="http://fernandoboza.com/bootstrap-4-npm" target='_blank' rel="noopener noreferrer" className='d-flex align-self-end'><Button block color='primary'>Go</Button></a>
                   </CardBlock>
                 </Card>
                 <Card>
