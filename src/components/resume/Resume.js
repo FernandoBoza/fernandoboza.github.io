@@ -99,7 +99,7 @@ class Resume extends Component {
                     
                     </Col> 
                     
-                    <Col lg='7' xs='12' className='pl-9 col-2'>
+                    <Col lg='8' xs='12' className='pl-9 col-2'>
                         <h1>Fernando Boza</h1>
                         <h3>Creative Director</h3>
 
@@ -123,7 +123,7 @@ class Resume extends Component {
 
                         <div className="work_experience">
                            <Row>
-                              <Col><h5>Developer Writer</h5></Col>
+                              <Col lg='7'><h5>Developer Writer</h5></Col>
                               <Col><h5>July 2016 - Feb 2017</h5></Col>
                            </Row>
                            <h5 className="para-text">BeMyApp</h5>
@@ -135,7 +135,7 @@ class Resume extends Component {
                         
                         <div className="work_experience">
                            <Row>
-                              <Col><h5>Project Manager</h5></Col>
+                              <Col lg='7'><h5>Project Manager</h5></Col>
                               <Col><h5>Nov 2014 - July 2016</h5></Col>
                            </Row>
                            <h5 className="para-text">BeMyApp | Paris</h5>
@@ -149,7 +149,7 @@ class Resume extends Component {
 
                         <div className="work_experience">
                            <Row>
-                              <Col><h5>Lead Graphic Designer</h5></Col>
+                              <Col lg='7'><h5>Lead Graphic Designer</h5></Col>
                               <Col><h5>2012 - 2014</h5></Col>
                            </Row>
                            <h5 className="para-text">MegaTV | Miami</h5>
@@ -163,6 +163,14 @@ class Resume extends Component {
                         <h3 className='my-7 right-line_r'>
                            <span>Education</span>
                         </h3>
+
+                        <div className="work_experience">
+                           <Row>
+                              <Col lg='7'><h5>Bachelors in Digital Graphics & Production</h5></Col>
+                              <Col><h5>2007 - 2011</h5></Col>
+                           </Row>
+                           <h5 className="para-text">Miami Int University of Art & Design</h5>
+                        </div>
 
                     </Col>
                 </Row>

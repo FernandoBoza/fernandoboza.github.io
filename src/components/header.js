@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
+import { Dropdown, DropdownMenu } from 'reactstrap';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
 
 class HeaderComponent extends Component {
@@ -8,13 +9,23 @@ constructor(props) {
     super(props);
 
     this.toggle = this.toggle.bind(this);
-    this.state = { isOpen: false,};
-  }
+    this.toggleResume = this.toggleDropDown.bind(this);    
+    this.state = { 
+       isOpen: false,
+       dropdownOpen: false       
+      };
+   }
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+
+  toggleDropDown() {
+   this.setState({
+     dropdownOpen: !this.state.dropdownOpen
+   });
+ }
 
   render() {
     return (
@@ -52,18 +63,27 @@ constructor(props) {
             <NavbarToggler right onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto pageLinks" navbar>
-            <NavItem>
-                <NavLink exact to="/" className='nav-link'>Home</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink to="/portfolio" className='nav-link'>Portfolio</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink to="/tutorial" className='nav-link'>Tutorial</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink to="/resume" className='nav-link'>Resume</NavLink>
-            </NavItem>
+               <NavItem><NavLink exact to="/" className='nav-link'>Home</NavLink></NavItem>
+               <NavItem><NavLink to="/portfolio" className='nav-link'>Portfolio</NavLink></NavItem>
+               <NavItem><NavLink to="/tutorial" className='nav-link'>Tutorial</NavLink></NavItem>
+               <NavItem><NavLink to="/resume" className='nav-link'>
+               <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                  <span
+                     onClick={this.toggle}
+                     data-toggle="dropdown"
+                     aria-haspopup="true"
+                     aria-expanded={this.state.dropdownOpen}
+                  >
+                     Custom Dropdown Content
+                  </span>
+                  <DropdownMenu>
+                     <div onClick={this.toggle}>Custom dropdown item</div>
+                     <div onClick={this.toggle}>Custom dropdown item</div>
+                     <div onClick={this.toggle}>Custom dropdown item</div>
+                     <div onClick={this.toggle}>Custom dropdown item</div>
+                  </DropdownMenu>
+                  </Dropdown>
+               </NavLink></NavItem>
             </Nav>
             </Collapse>
         </Navbar>
