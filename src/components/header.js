@@ -74,13 +74,11 @@ constructor(props) {
                      aria-haspopup="true"
                      aria-expanded={this.state.dropdownOpen}
                   >
-                     Custom Dropdown Content
+                     Resume
                   </span>
                   <DropdownMenu>
-                     <div onClick={this.toggle}>Custom dropdown item</div>
-                     <div onClick={this.toggle}>Custom dropdown item</div>
-                     <div onClick={this.toggle}>Custom dropdown item</div>
-                     <div onClick={this.toggle}>Custom dropdown item</div>
+                     <p>Hello</p>
+                     {/* <div onClick={this.toggle}>Custom dropdown item</div> */}
                   </DropdownMenu>
                   </Dropdown>
                </NavLink></NavItem>
