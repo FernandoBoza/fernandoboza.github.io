@@ -108,22 +108,22 @@ constructor(props) {
                 <Col xs='12' md='3' className='text-center wow bounceIn' data-wow-duration="1000ms" data-wow-delay="300ms">
                   <h1 className='thin blue'><CountTo to={24} speed={2234} /></h1>
                   <h3>Happy Clients</h3>
-                  <h1><span role="img" aria-label="Smile">😬</span></h1>
+                  <h1><span className='emoji-home' role="img" aria-label="Smile">😁</span></h1>
                 </Col>
                 <Col xs='12' md='3' className='text-center wow bounceIn' data-wow-duration="1000ms" data-wow-delay="300ms">
                   <h1 className='thin blue'><CountTo to={6} speed={1234} /></h1>
                   <h3>Years in Business</h3> 
-                  <h1><span role="img" aria-label="Muscle">💪</span></h1>
+                  <h1><span className='emoji-home' role="img" aria-label="Muscle">💪</span></h1>
                 </Col>
                 <Col xs='12' md='3' className='text-center wow bounceIn' data-wow-duration="1000ms" data-wow-delay="300ms">
                   <h1 className='thin blue'><CountTo to={432} speed={4000} /></h1>
                   <h3>Cups of Coffee</h3>
-                  <h1><span role="img" aria-label="Coffee">☕️</span></h1>
+                  <h1><span className='emoji-home' role="img" aria-label="Coffee">☕️</span></h1>
                 </Col>
                 <Col xs='12' md='3' className='text-center wow bounceIn' data-wow-duration="1000ms" data-wow-delay="300ms">
                   <h1 className='thin blue'><CountTo to={240} speed={3234} /></h1>
                   <h3>Total Projects</h3>
-                  <h1><span role="img" aria-label="Laptop">💻</span></h1>
+                  <h1><span className='emoji-home' role="img" aria-label="Laptop">💻</span></h1>
                 </Col>
               </Row>
             </Container>

@@ -66,22 +66,7 @@ constructor(props) {
                <NavItem><NavLink exact to="/" className='nav-link'>Home</NavLink></NavItem>
                <NavItem><NavLink to="/portfolio" className='nav-link'>Portfolio</NavLink></NavItem>
                <NavItem><NavLink to="/tutorial" className='nav-link'>Tutorial</NavLink></NavItem>
-               <NavItem><NavLink to="/resume" className='nav-link'>
-               <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                  <span
-                     onClick={this.toggle}
-                     data-toggle="dropdown"
-                     aria-haspopup="true"
-                     aria-expanded={this.state.dropdownOpen}
-                  >
-                     Resume
-                  </span>
-                  <DropdownMenu>
-                     <p>Hello</p>
-                     {/* <div onClick={this.toggle}>Custom dropdown item</div> */}
-                  </DropdownMenu>
-                  </Dropdown>
-               </NavLink></NavItem>
+               <NavItem><NavLink to="/resume" className='nav-link'></NavLink></NavItem>
             </Nav>
             </Collapse>
         </Navbar>
