@@ -66,7 +66,7 @@ constructor(props) {
                <NavItem><NavLink exact to="/" className='nav-link'>Home</NavLink></NavItem>
                <NavItem><NavLink to="/portfolio" className='nav-link'>Portfolio</NavLink></NavItem>
                <NavItem><NavLink to="/tutorial" className='nav-link'>Tutorial</NavLink></NavItem>
-               <NavItem><NavLink to="/resume" className='nav-link'></NavLink></NavItem>
+               <NavItem><NavLink to="/resume" className='nav-link'>Resume</NavLink></NavItem>
             </Nav>
             </Collapse>
         </Navbar>
