@@ -5,11 +5,11 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "bootstrap": "^4.0.0-alpha.6",
-    "react": "^15.5.4",
+    "react": "^16.6.1",
     "react-addons-css-transition-group": "^15.5.2",
     "react-addons-transition-group": "^15.5.2",
     "react-count-to": "^0.8.0",
-    "react-dom": "^15.5.4",
+    "react-dom": "^16.6.1",
     "react-router-dom": "^4.1.1",
     "reactstrap": "^4.6.2",
     "wowjs": "^1.1.3"
